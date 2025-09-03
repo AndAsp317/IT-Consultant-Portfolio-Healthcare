@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IT-Consultant Portfolio – Patientenportal Case | André Asprion</title>
+  <meta name="description" content="Digitales Patientenportal als Case Study: Analyse, Solution Design, PoC, Tests und Go-Live – Junior IT-Consultant Portfolio von André Asprion für HealthConnect Solutions AG." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="Startseite">AA</a>
+    <nav aria-label="Hauptnavigation">
+      <a href="#projekt">Projekt</a>
+      <a href="#phasen">Phasen</a>
+      <a href="#demo">Demo</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="btn" href="https://github.com/AndAsp317" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" role="banner">
+      <div class="hero__content">
+        <h1>Digitales Patientenportal – <span class="accent">Case Study</span></h1>
+        <p class="lede">Ein praxisnahes Healthcare-Consulting-Projekt für die <strong>HealthConnect Solutions AG</strong>: von der Anforderungsanalyse über HL7/FHIR-Solution-Design und Proof of Concept bis hin zu Test, Go-Live und Lessons Learned.</p>
+        <div class="hero__cta">
+          <a class="btn" href="#projekt">Projekt ansehen</a>
+          <a class="btn btn--ghost" href="#kontakt">Kontakt</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projekt" class="card container">
+      <h2>Projekt in Kürze</h2>
+      <div class="grid two">
+        <div>
+          <ul class="check">
+            <li><strong>Kunde:</strong> HealthConnect Solutions AG</li>
+            <li><strong>Ziel:</strong> Einführung eines <em>digitalen Patientenportals</em> mit EPA, Online-Terminbuchung & Telemedizin</li>
+            <li><strong>Vorgehen:</strong> Agil (Scrum, 2-Wochen-Sprints)</li>
+            <li><strong>Standards:</strong> HL7 / FHIR, DSGVO, KIS-Integration</li>
+          </ul>
+        </div>
+        <div>
+          <p><strong>Ergebnisse & Nutzen</strong></p>
+          <ul class="bullets">
+            <li>Kürzere Wartezeiten & geringere No-Show-Rate</li>
+            <li>Transparente KPIs (Auslastung, Wartezeit, Buchungen)</li>
+            <li>Strukturierte EPA – bessere Behandlungstransparenz</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="highlights">
+        <article class="kpi">
+          <h3>Self-Service Buchung</h3>
+          <p>Web-/App-Termine mit E-Mail/SMS-Erinnerung.</p>
+        </article>
+        <article class="kpi">
+          <h3>Telemedizin</h3>
+          <p>Video-Sprechstunden inkl. Dokumentation in der EPA.</p>
+        </article>
+        <article class="kpi">
+          <h3>KIS-Anbindung</h3>
+          <p>HL7/FHIR-Schnittstellen für Stammdaten & Befunde.</p>
+        </article>
+      </div>
+
+      <div class="note">
+        Hinweis: Das Repo enthält <code>docs/</code> (Anforderungen, Prozesse, Architektur, Tests, Go-Live) und <code>demo/</code> (Dummy-Daten &amp; Power-BI-Anleitung).
+      </div>
+    </section>
+
+    <section id="phasen" class="container">
+      <h2>Vorgehensmodell &amp; Phasen</h2>
+      <ol class="timeline">
+        <li>
+          <h3>Kick-off &amp; Scope</h3>
+          <p>Ziele, KPIs, Meilensteine, Risiken. Abgrenzung: keine tiefen ERP-Funktionen.</p>
+        </li>
+        <li>
+          <h3>Discovery &amp; Anforderungen</h3>
+          <p>Interviews (Ärzte, Pflege, Verwaltung), IST-Prozesse, Must-Haves (Termin, EPA, Telemedizin, KPIs).</p>
+        </li>
+        <li>
+          <h3>Solution Design</h3>
+          <p>Portal-Frontend, FHIR-API, KIS/Abrechnung, Telemedizin-Provider, DWH/Power BI.</p>
+        </li>
+        <li>
+          <h3>Backlog &amp; Sprint 0</h3>
+          <p>User Stories (INVEST), MoSCoW-Priorisierung, Definition of Done, Setup.</p>
+        </li>
+        <li>
+          <h3>Proof of Concept</h3>
+          <p>Dummy-Patienten/Termine, Einmalfluss: Buchung → Bestätigung → EPA-Dokumentation.</p>
+        </li>
+        <li>
+          <h3>Test &amp; Abnahme</h3>
+          <p>UAT-Szenarien: Termin, Arzt-Login, Telemedizin, Rechte/DSGVO.</p>
+        </li>
+        <li>
+          <h3>Go-Live &amp; Hypercare</h3>
+          <p>Cutover (Altsystem abschalten), Monitoring (Buchungen, Uptime, Tickets).</p>
+        </li>
+        <li>
+          <h3>Abschluss</h3>
+          <p>Lessons Learned, Empfehlungen (Change-Management, Schulungen).</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="demo" class="container card">
+      <h2>Demo &amp; Downloads</h2>
+      <p>Im Repo: <code>demo/data</code> (Patients.csv, Appointments.csv) und <code>demo/powerbi/README.md</code> für ein schnelles Dashboard (Wartezeiten, Auslastung, No-Shows).</p>
+      <div class="grid two">
+        <div class="list">
+          <h3>Schnellstart Power BI</h3>
+          <ol>
+            <li>CSV laden: Patients, Appointments</li>
+            <li>Beziehungen: <code>Appointments.patient_id ↔ Patients.patient_id</code></li>
+            <li>Measures: Avg Wait Time, No-Show %, Utilization</li>
+          </ol>
+        </div>
+        <div class="list">
+          <h3>Compliance &amp; Standards</h3>
+          <ul class="bullets">
+            <li>DSGVO: Rollen &amp; Berechtigungen</li>
+            <li>Interoperabilität: HL7/FHIR</li>
+            <li>Security: MFA, Audit-Logs</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="container contact card">
+      <h2>Kontakt</h2>
+      <p><strong>André Asprion</strong> – Junior IT-Consultant (Quereinsteiger)</p>
+      <ul class="bullets">
+        <li>E-Mail: <a href="mailto:Andre.Asprion@gmx.de">Andre.Asprion@gmx.de</a></li>
+        <li>GitHub: <a href="https://github.com/AndAsp317" target="_blank" rel="noopener">AndAsp317</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 André Asprion · MIT License · Healthcare Case: HealthConnect Solutions AG</p>
+  </footer>
+</body>
+</html>

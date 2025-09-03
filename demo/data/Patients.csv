@@ -1,0 +1,4 @@
+patient_id,first_name,last_name,dob,gender
+10001,Anna,Müller,1986-03-12,F
+10002,Jonas,Schmidt,1978-11-02,M
+10003,Lea,Keller,1991-07-25,F
